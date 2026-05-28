@@ -34,18 +34,18 @@ function checkAnswer() {
         score++;
         document.getElementById("score").textContent = score;
         generateQuestions();
+        document.getElementById("answer").value = "";
     } else {            
         answer.style.color = "red";
         answer.textContent = "Wrong! The correct answer was " + correctAnswer;
         generateQuestions();
+        document.getElementById("answer").value = "";
     }
 
     // If it reaches score, end the game
     if (score >= 5) {
         document.getElementById("div-questions").style.display = "none";
-        document.getElementById("div-success").style.display = "block";
-        answer.textContent = "";
-        
+        document.getElementById("div-success").style.display = "block";        
     }        
 }
 
