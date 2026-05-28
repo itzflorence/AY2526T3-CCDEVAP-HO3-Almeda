@@ -4,8 +4,8 @@ let score = 0;
 function generateQuestions() {
     const operators = ["+", "-", "*"];
 
-    num1 = Math.floor(Math.random() * 10);
-    num2 = Math.floor(Math.random() * 10);
+    num1 = Math.floor(Math.random() * 11);
+    num2 = Math.floor(Math.random() * 11);
 
     const question = document.getElementById("question");
 
